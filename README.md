@@ -2,8 +2,6 @@
 ## Noah Burnham
 ## CS 3120 Final Project
 
-<<<<<<< HEAD
-=======
 For my final project, I have implemented Peercoin: a cryptocurrency that relies on Proof of Stake for mining. Proof of Stake mining is where a miner puts up a "stake" to prove they are a real person. The stake determines the set mining difficulty level. This scheme is an improvement over Bitcoin because it does not waste compute (and energy) because as time goes on, it gets easier for the miner to successfully mine a block. 
 
 ### Proof of Stake Mining
@@ -15,4 +13,4 @@ Once a miner stakes coins (outputs from previous transactions), the coin-age sho
 Validating the blockchain is very similar to validating the Bitcoin blockchain, but with one small tweak. To validate the blockchain, you need to check the hash to ensure that things haven't been tampered with, and check each transaction within the block to ensure that whoever was sending the Peercoin was authorized to do so (using signatures). The difference is that the verifier also has to check to see whether the block meets the difficulty requirement. Since the mining difficulty level is dynamic, the difficulty used to mine a block is stored within each block. 
 
 Since each output gets hashed when validating the blockchain, and the stakes (which are outputs themselves) are mutated to reset their coin age, the `block_height` field of the Output class is omitted from the `__repr__` function.
->>>>>>> ee0c08fce40794afc3bf7fe907fa8d9a71c8e8b3
+
