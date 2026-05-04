@@ -2,7 +2,7 @@
 ## Noah Burnham
 ## CS 3120 Final Project
 
-For my final project, I have implemented Peercoin: a cryptocurrency that relies on Proof of Stake for mining. Proof of Stake mining is where a miner puts up a "stake" to prove they are a real person. The stake determines the set mining difficulty level. This scheme is an improvement over Bitcoin because it does not waste compute (and energy) because as time goes on, it gets easier for the miner to successfully mine a block. 
+For my final project, I have implemented Peercoin: a cryptocurrency that relies on a hybrid of Proof of Work and Proof of Stake for mining. This mining scheme is where a miner puts up a "stake" to prove they are a real person. The stake determines the set mining difficulty level. This scheme is an improvement over Bitcoin because it wastes less compute (and energy) because as time goes on, it gets easier for the miner to successfully mine a block. 
 
 ### Data Structures
 Each Block on the blockchain has a list of Transactions, a hash pointer to the previous block, a nonce (for mining purposes), a hash of the miners public key, a height, and a difficulty level. The height is essentially the index of the block on the blockchain, and the difficulty is stored in the block because the difficulty is dynamic with Proof of Stake mining. Each Transaction is just a list of signed inputs (signed with the users signing key) and  a list of outputs. 
